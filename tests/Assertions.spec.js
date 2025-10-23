@@ -13,7 +13,7 @@ test('Asertions test',async ({page})=>{
     // element enable, disable
     // const goBack = await page.locator('#gotologin')
     // await expect(goBack).toBeEnabled();
-    //check radio butto
+    // check radio butto
     // check disable button 
     await page.getByText('Radio Button').click();
     const noRadioButton = page.locator("label[for='noRadio']");
