@@ -77,5 +77,5 @@ test('Asertions test',async ({page})=>{
     const rightClick= await page.locator('#rightClickBtn')
     await rightClick.click({ button: 'right' })
 
-    // toHaveValue
+    
 })
