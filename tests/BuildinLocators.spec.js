@@ -13,7 +13,7 @@ test('Build-InLocators', async({page})=>{
     // using placeholder
     await page.getByPlaceholder('Full Name').fill('Tom Hilderson')
     await page.getByPlaceholder('name@example.com').fill('tom@email.com')
-    //using label
+    //using label                      
     // await page.waitForTimeout(3000);
     await page.getByPlaceholder('Current Address').fill('Dhaka 1206')
     await page.locator('#permanentAddress').fill('Dhaka, Bangladesh');
