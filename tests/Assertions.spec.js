@@ -78,4 +78,18 @@ test('Asertions test',async ({page})=>{
     await rightClick.click({ button: 'right' })
 
     // toHaveValue
+    await page.goto('https://demoqa.com/automation-practice-form')
+    const emailBox= await page.locator('#userEmail')
+    await emailBox.fill('test@email.com')
+    await expect(emailBox).toHaveValue('test@email.com')
+
+    // const DoBcount = await page.locator('#dateOfBirthInput')
+    // await expect(DoBcount).toHaveValue('27 Oct 2025')
+
+    await page.getByText('Select State').click();
+
+    const st = page.locator('[id^="react-select-3-option-"]');
+    await expect(st).toHaveCount(4);
+
+
 })
