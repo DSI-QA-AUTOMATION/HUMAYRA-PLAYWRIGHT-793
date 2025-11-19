@@ -21,3 +21,16 @@ test('test', async ({ page }) => {
 //   await page.getByText('Permananet Address :Bangladesh').click();
 
 });
+
+// import { test, expect } from '@playwright/test';
+
+// test('test', async ({ page }) => {
+//   await page.goto('https://demoqa.com/automation-practice-form');
+//   await page.locator('#state svg').click();
+//   await page.getByText('NCR', { exact: true }).click();
+//   await page.locator('.css-1gtu0rj-indicatorContainer').click();
+//   await page.locator('#react-select-3-option-0').click();
+//   await page.locator('#state svg').click();
+//   await page.locator('#state svg').click();
+//   await page.locator('#state svg').click();
+// });
